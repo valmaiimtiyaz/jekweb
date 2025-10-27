@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudioSnap</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+<body>
+
+    <nav class="navbar">
+      <div class="logo">StudioSnap</div>
+      <div class="anak_nav">
+      <a href="home.html">Home</a>
+      <a href="layout.html">Choose Layout</a>
+     </div>
+   </nav>
+
+    <main class="cam">
+      <div class="camera-container">
+        <video id="camera-stream" autoplay muted> Kamera tidak ditemukan atau izin ditolak. </video>
+        <div id="countdown-timer"></div>
+      </div>
+
+      <button class="capture-button" id="capture-btn">start capture</button>
+      <h3 class="filter-title">Choose a filter for your photos!</h3>
+      <div class="filter-bar">
+        <span class="filter-label">Filter</span>
+        <button class="filter-option selected" data-filter="none">No Filter</button>
+        <button class="filter-option" data-filter="grayscale(100%) contrast(130%) ">B&W</button>
+        <button class="filter-option" data-filter="sepia(100%)">Sepia</button>
+        <button class="filter-option" data-filter="sepia(60%) contrast(110%)">Vintage</button>
+      </div>
+    </main>
+   <script src="cam.js"></script>
+</body>
+</html>
